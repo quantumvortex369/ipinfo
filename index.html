@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Info - Información de IP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IP Info</h1>
+        <div class="input-container">
+            <div class="input-group">
+                <input type="text" id="ipInput" placeholder="Ingrese una dirección IP">
+                <button id="searchIpBtn" class="search-btn">Buscar IP</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="urlInput" placeholder="Ingrese una URL">
+                <button id="searchUrlBtn" class="search-btn">Buscar URL</button>
+            </div>
+        </div>
+        <div class="history-container">
+            <h3>Historial de Búsquedas</h3>
+            <div id="historyList"></div>
+        </div>
+        <div id="results" class="results">
+            <div class="loading" id="loading">Cargando...</div>
+            <div id="error" class="error"></div>
+            <div class="info-section" id="basicInfo">
+                <h2>Información Básica</h2>
+                <div class="info-item">
+                    <span class="label">IP:</span>
+                    <span class="value" id="ip"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Dominio:</span>
+                    <span class="value" id="hostname"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Tiempo de Ping:</span>
+                    <span class="value" id="pingTime"></span>
+                </div>
+            </div>
+            <div class="info-section" id="locationInfo">
+                <h2>Ubicación</h2>
+                <div class="info-item">
+                    <span class="label">País:</span>
+                    <span class="value" id="country"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Ciudad:</span>
+                    <span class="value" id="city"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Región:</span>
+                    <span class="value" id="region"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Código Postal:</span>
+                    <span class="value" id="postal"></span>
+                </div>
+            </div>
+            <div class="info-section" id="ispInfo">
+                <h2>Proveedor de Servicios</h2>
+                <div class="info-item">
+                    <span class="label">ISP:</span>
+                    <span class="value" id="isp"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Organización:</span>
+                    <span class="value" id="org"></span>
+                </div>
+            </div>
+            <div class="info-section" id="technicalInfo">
+                <h2>Información Técnica</h2>
+                <div class="info-item">
+                    <span class="label">Tipo de IP:</span>
+                    <span class="value" id="ipType"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">ASN:</span>
+                    <span class="value" id="asn"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Zona Horaria:</span>
+                    <span class="value" id="timezone"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
